@@ -133,7 +133,7 @@
     <Compile Include="public\index.php" />
     <Compile Include="public\robots.txt" />
     <Compile Include="public\web.config" />
-    <Compile Include="resources\assets\sass\app.scss" />
+    <Compile Include="resources\sass\app.scss" />
     <Compile Include="resources\lang\en\auth.php" />
     <Compile Include="resources\lang\en\pagination.php" />
     <Compile Include="resources\lang\en\passwords.php" />
@@ -192,11 +192,11 @@
     <Folder Include="public\homepage theme\img" />
     <Folder Include="public\homepage theme\js" />
     <Folder Include="public\homepage theme" />
+    <Folder Include="public\svg\" />
     <Folder Include="public\theme\img" />
     <Folder Include="public\theme" />
     <Folder Include="public" />
-    <Folder Include="resources\assets\sass" />
-    <Folder Include="resources\assets" />
+    <Folder Include="resources\sass\" />
     <Folder Include="resources\lang\en" />
     <Folder Include="resources\lang" />
     <Folder Include="resources\views\auth\emails" />
@@ -207,8 +207,23 @@
     <Folder Include="resources\views\vendor" />
     <Folder Include="resources\views" />
     <Folder Include="resources" />
+    <Folder Include="storage\" />
+    <Folder Include="storage\framework\" />
+    <Folder Include="storage\framework\cache\" />
+    <Folder Include="storage\framework\cache\data\" />
+    <Folder Include="storage\framework\sessions\" />
+    <Folder Include="storage\framework\views\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="database\.gitkeep" />
+    <Content Include="public\svg\403.svg" />
+    <Content Include="public\svg\404.svg" />
+    <Content Include="public\svg\500.svg" />
+    <Content Include="public\svg\503.svg" />
+    <Content Include="storage\framework\.gitignore" />
+    <Content Include="storage\framework\cache\.gitignore" />
+    <Content Include="storage\framework\cache\data\.gitignore" />
+    <Content Include="storage\framework\sessions\.gitignore" />
+    <Content Include="storage\framework\views\.gitignore" />
   </ItemGroup>
 </Project>
