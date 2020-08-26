@@ -208,4 +208,7 @@
     <Folder Include="resources\views" />
     <Folder Include="resources" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="database\.gitkeep" />
+  </ItemGroup>
 </Project>
