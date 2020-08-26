@@ -1,0 +1,211 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>PHP-B2C-WebApp</Name>
+    <ProjectGuid>{3cf51445-e6b1-4b9c-8d5e-17bd6ae1d89b}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <Runtime>PHP</Runtime>
+    <RuntimeVersion>7.3</RuntimeVersion>
+    <WebRoot>public</WebRoot>
+    <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
+    <EnvName>IISExpress</EnvName>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <PHPDevAutoPort>true</PHPDevAutoPort>
+    <IISProjectUrl>http://localhost:13100/</IISProjectUrl>
+    <IISExpressSslEnabled>true</IISExpressSslEnabled>
+    <IISExpressSecurePort>44302</IISExpressSecurePort>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app\Console\Commands\Inspire.php" />
+    <Compile Include="app\Console\Kernel.php" />
+    <Compile Include="app\Exceptions\Handler.php" />
+    <Compile Include="app\Http\Controllers\EndpointHandler.php" />
+    <Compile Include="app\Http\Controllers\settings.php" />
+    <Compile Include="app\Http\Controllers\TokenChecker.php" />
+    <Compile Include="app\Http\Kernel.php" />
+    <Compile Include="app\Http\routes.php" />
+    <Compile Include="app\Providers\AppServiceProvider.php" />
+    <Compile Include="app\Providers\AuthServiceProvider.php" />
+    <Compile Include="app\Providers\EventServiceProvider.php" />
+    <Compile Include="app\Providers\RouteServiceProvider.php" />
+    <Compile Include="bootstrap\cache\.gitignore" />
+    <Compile Include="bootstrap\app.php" />
+    <Compile Include="bootstrap\autoload.php" />
+    <Compile Include="config\app.php" />
+    <Compile Include="config\auth.php" />
+    <Compile Include="config\broadcasting.php" />
+    <Compile Include="config\cache.php" />
+    <Compile Include="config\compile.php" />
+    <Compile Include="config\database.php" />
+    <Compile Include="config\filesystems.php" />
+    <Compile Include="config\mail.php" />
+    <Compile Include="config\queue.php" />
+    <Compile Include="config\services.php" />
+    <Compile Include="config\session.php" />
+    <Compile Include="config\view.php" />
+    <Compile Include="public\blog theme\css\blog-post.css" />
+    <Compile Include="public\blog theme\css\bootstrap.css" />
+    <Compile Include="public\blog theme\css\bootstrap.min.css" />
+    <Compile Include="public\blog theme\fonts\glyphicons-halflings-regular.eot" />
+    <Compile Include="public\blog theme\fonts\glyphicons-halflings-regular.svg" />
+    <Compile Include="public\blog theme\fonts\glyphicons-halflings-regular.ttf" />
+    <Compile Include="public\blog theme\fonts\glyphicons-halflings-regular.woff" />
+    <Compile Include="public\blog theme\fonts\glyphicons-halflings-regular.woff2" />
+    <Compile Include="public\blog theme\js\bootstrap.js" />
+    <Compile Include="public\blog theme\js\bootstrap.min.js" />
+    <Compile Include="public\blog theme\js\jquery.js" />
+    <Compile Include="public\blog theme\index.html" />
+    <Compile Include="public\blog theme\LICENSE" />
+    <Compile Include="public\blog theme\README.md" />
+    <Compile Include="public\homepage theme\css\bootstrap.css" />
+    <Compile Include="public\homepage theme\css\bootstrap.min.css" />
+    <Compile Include="public\homepage theme\css\stylish-portfolio.css" />
+    <Compile Include="public\homepage theme\font-awesome\css\font-awesome.css" />
+    <Compile Include="public\homepage theme\font-awesome\css\font-awesome.min.css" />
+    <Compile Include="public\homepage theme\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Compile Include="public\homepage theme\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Compile Include="public\homepage theme\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Compile Include="public\homepage theme\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Compile Include="public\homepage theme\font-awesome\fonts\FontAwesome.otf" />
+    <Compile Include="public\homepage theme\font-awesome\less\bordered-pulled.less" />
+    <Compile Include="public\homepage theme\font-awesome\less\core.less" />
+    <Compile Include="public\homepage theme\font-awesome\less\fixed-width.less" />
+    <Compile Include="public\homepage theme\font-awesome\less\font-awesome.less" />
+    <Compile Include="public\homepage theme\font-awesome\less\icons.less" />
+    <Compile Include="public\homepage theme\font-awesome\less\larger.less" />
+    <Compile Include="public\homepage theme\font-awesome\less\list.less" />
+    <Compile Include="public\homepage theme\font-awesome\less\mixins.less" />
+    <Compile Include="public\homepage theme\font-awesome\less\path.less" />
+    <Compile Include="public\homepage theme\font-awesome\less\rotated-flipped.less" />
+    <Compile Include="public\homepage theme\font-awesome\less\spinning.less" />
+    <Compile Include="public\homepage theme\font-awesome\less\stacked.less" />
+    <Compile Include="public\homepage theme\font-awesome\less\variables.less" />
+    <Compile Include="public\homepage theme\font-awesome\scss\font-awesome.scss" />
+    <Compile Include="public\homepage theme\font-awesome\scss\_bordered-pulled.scss" />
+    <Compile Include="public\homepage theme\font-awesome\scss\_core.scss" />
+    <Compile Include="public\homepage theme\font-awesome\scss\_fixed-width.scss" />
+    <Compile Include="public\homepage theme\font-awesome\scss\_icons.scss" />
+    <Compile Include="public\homepage theme\font-awesome\scss\_larger.scss" />
+    <Compile Include="public\homepage theme\font-awesome\scss\_list.scss" />
+    <Compile Include="public\homepage theme\font-awesome\scss\_mixins.scss" />
+    <Compile Include="public\homepage theme\font-awesome\scss\_path.scss" />
+    <Compile Include="public\homepage theme\font-awesome\scss\_rotated-flipped.scss" />
+    <Compile Include="public\homepage theme\font-awesome\scss\_spinning.scss" />
+    <Compile Include="public\homepage theme\font-awesome\scss\_stacked.scss" />
+    <Compile Include="public\homepage theme\font-awesome\scss\_variables.scss" />
+    <Compile Include="public\homepage theme\fonts\glyphicons-halflings-regular.eot" />
+    <Compile Include="public\homepage theme\fonts\glyphicons-halflings-regular.svg" />
+    <Compile Include="public\homepage theme\fonts\glyphicons-halflings-regular.ttf" />
+    <Compile Include="public\homepage theme\fonts\glyphicons-halflings-regular.woff" />
+    <Compile Include="public\homepage theme\fonts\glyphicons-halflings-regular.woff2" />
+    <Compile Include="public\homepage theme\img\bg.jpg" />
+    <Compile Include="public\homepage theme\img\callout.jpg" />
+    <Compile Include="public\homepage theme\img\portfolio-1.jpg" />
+    <Compile Include="public\homepage theme\img\portfolio-2.jpg" />
+    <Compile Include="public\homepage theme\img\portfolio-3.jpg" />
+    <Compile Include="public\homepage theme\img\portfolio-4.jpg" />
+    <Compile Include="public\homepage theme\js\bootstrap.js" />
+    <Compile Include="public\homepage theme\js\bootstrap.min.js" />
+    <Compile Include="public\homepage theme\js\jquery.js" />
+    <Compile Include="public\theme\img\banner.jpg" />
+    <Compile Include="public\theme\img\bg.gif" />
+    <Compile Include="public\theme\img\bg.jpg" />
+    <Compile Include="public\theme\img\bl.gif" />
+    <Compile Include="public\theme\img\blank.jpg" />
+    <Compile Include="public\theme\img\blue_square.gif" />
+    <Compile Include="public\theme\img\br.gif" />
+    <Compile Include="public\theme\img\tl.gif" />
+    <Compile Include="public\theme\img\tr.gif" />
+    <Compile Include="public\theme\index.html" />
+    <Compile Include="public\theme\licence.txt" />
+    <Compile Include="public\theme\style.css" />
+    <Compile Include="public\.htaccess" />
+    <Compile Include="public\favicon.ico" />
+    <Compile Include="public\index.php" />
+    <Compile Include="public\robots.txt" />
+    <Compile Include="public\web.config" />
+    <Compile Include="resources\assets\sass\app.scss" />
+    <Compile Include="resources\lang\en\auth.php" />
+    <Compile Include="resources\lang\en\pagination.php" />
+    <Compile Include="resources\lang\en\passwords.php" />
+    <Compile Include="resources\lang\en\validation.php" />
+    <Compile Include="resources\views\auth\emails\password.blade.php" />
+    <Compile Include="resources\views\auth\passwords\email.blade.php" />
+    <Compile Include="resources\views\auth\passwords\reset.blade.php" />
+    <Compile Include="resources\views\auth\login.blade.php" />
+    <Compile Include="resources\views\auth\register.blade.php" />
+    <Compile Include="resources\views\errors\503.blade.php" />
+    <Compile Include="resources\views\layouts\app.blade.php" />
+    <Compile Include="resources\views\vendor\.gitkeep" />
+    <Compile Include="resources\views\blog_layout.php" />
+    <Compile Include="resources\views\blog_post_create.php" />
+    <Compile Include="resources\views\blog_post_view.php" />
+    <Compile Include="resources\views\error.php" />
+    <Compile Include="resources\views\home.php" />
+    <Compile Include=".env.example" />
+    <Compile Include=".gitattributes" />
+    <Compile Include=".gitignore" />
+    <Compile Include="artisan" />
+    <Compile Include="composer.json" />
+    <Compile Include="composer.lock" />
+    <Compile Include="CONTRIBUTING.md" />
+    <Compile Include="gulpfile.js" />
+    <Compile Include="LICENSE" />
+    <Compile Include="package.json" />
+    <Compile Include="phpunit.xml" />
+    <Compile Include="README.md" />
+    <Compile Include="server.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\Console\Commands" />
+    <Folder Include="app\Console" />
+    <Folder Include="app\Exceptions\" />
+    <Folder Include="app\Http\Controllers" />
+    <Folder Include="app\Http" />
+    <Folder Include="app\Providers" />
+    <Folder Include="app" />
+    <Folder Include="bootstrap\cache" />
+    <Folder Include="bootstrap" />
+    <Folder Include="config" />
+    <Folder Include="database\" />
+    <Folder Include="Properties\" />
+    <Folder Include="public\blog theme\css" />
+    <Folder Include="public\blog theme\fonts" />
+    <Folder Include="public\blog theme\js" />
+    <Folder Include="public\blog theme" />
+    <Folder Include="public\homepage theme\css" />
+    <Folder Include="public\homepage theme\font-awesome\css" />
+    <Folder Include="public\homepage theme\font-awesome\fonts" />
+    <Folder Include="public\homepage theme\font-awesome\less" />
+    <Folder Include="public\homepage theme\font-awesome\scss" />
+    <Folder Include="public\homepage theme\font-awesome" />
+    <Folder Include="public\homepage theme\fonts" />
+    <Folder Include="public\homepage theme\img" />
+    <Folder Include="public\homepage theme\js" />
+    <Folder Include="public\homepage theme" />
+    <Folder Include="public\theme\img" />
+    <Folder Include="public\theme" />
+    <Folder Include="public" />
+    <Folder Include="resources\assets\sass" />
+    <Folder Include="resources\assets" />
+    <Folder Include="resources\lang\en" />
+    <Folder Include="resources\lang" />
+    <Folder Include="resources\views\auth\emails" />
+    <Folder Include="resources\views\auth\passwords" />
+    <Folder Include="resources\views\auth" />
+    <Folder Include="resources\views\errors" />
+    <Folder Include="resources\views\layouts" />
+    <Folder Include="resources\views\vendor" />
+    <Folder Include="resources\views" />
+    <Folder Include="resources" />
+  </ItemGroup>
+</Project>

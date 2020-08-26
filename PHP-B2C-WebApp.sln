@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "PHP-B2C-WebApp", "PHP-B2C-WebApp.phpproj", "{3CF51445-E6B1-4B9C-8D5E-17BD6AE1D89B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CF51445-E6B1-4B9C-8D5E-17BD6AE1D89B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CF51445-E6B1-4B9C-8D5E-17BD6AE1D89B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1CCEF5C3-9378-49EF-A5F2-BF357F560F99}
+	EndGlobalSection
+EndGlobal
