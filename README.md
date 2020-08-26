@@ -2,9 +2,10 @@
 services: active-directory-b2c
 platforms: php
 author: t-olhuan
+contributer: [johnwc](https://github.com/johnwc)
 ---
 
-# PHP Web Application with Azure AD B2C
+# PHP Web Application with Azure AD B2C using laravel framework
 This repo contains code for a PHP blogging application that demonstrates the use of several B2C policies: general sign-in/sign-up without multifactor authetication, sign-in/sign-up with multifactor authentication, and profile editing. Users designated as administrators must login with the administrator policy requiring multifactor authentication. Administrators have the ability to create new blog posts. The application also illustrates how to receive and verify id-tokens from the B2C endpoint following the OpenID Connect standard. 
 
 The instructions below show you how to run/deploy your own blogging application using PHP (with the framework Laravel) and IIS on Windows.
@@ -15,12 +16,11 @@ The instructions below show you how to run/deploy your own blogging application 
 
 ## Create B2C App and Policies
 + Navigate to your account in the Azure Portal and open up the B2C blade.
-+ Create a web application. Make sure to remember the clientID and client secret.
++ Create a web application, using https://localhost:44302/ as Redirect URL. Make sure to remember the clientID and client secret.
 + Create a sign-in/sign-up policy and an edit profile policy. Create a separate policy for admins if you want admins to authenticate with a different policy. For more detailed instructions, see [here](https://azure.microsoft.com/en-us/documentation/articles/active-directory-b2c-reference-policies/).
 
 ## Configuring your PHP app settings
 + Clone the source code from github: `git clone https://github.com/Azure-Samples/active-directory-b2c-php-webapp-openidconnect.git`
-+ Download the latest version of the [php security library](http://phpseclib.sourceforge.net/index.html) and place the download in your repo in the folder "app/Http/Controllers/phpseclib".
 + In your app folder, open up "app/Http/Controllers/settings.php" and follow the instructions in the comments to configure the settings for your app.
 + There will be two flow options: Implicit Flow and Confidential Client Flow. For now, Implicit Flow is the recommended and default setting. Confidential Client Flow is included for future support of access tokens. 
 + In the terminal, type "composer install" to install the necessary dependencies.
@@ -28,7 +28,12 @@ The instructions below show you how to run/deploy your own blogging application 
 ## Running and Deploying your App
 
 ### To run your app locally
+#### Using Artisan
 In the terminal, type the command "php artisan serve" and navigate to http://localhost:8000/ to see your website in action.
+#### Using [PHP Tools for Visual Studio](https://www.devsense.com/en)
+ 1. Open the `PHP-B2C-WebApp.phpproj` project in Visual Studio
+ 2. Right-click `References` and choose `Install New Composer Packages...`
+ 3. Hit F5 to start the app
 
 ### To deploy this sample to Azure
 If you get stuck at any point, try taking a look at these [instructions](https://azure.microsoft.com/en-gb/documentation/articles/app-service-web-php-get-started/).
